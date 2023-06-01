@@ -1,0 +1,33 @@
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    gap: 10px;
+  }
+  .grid div {
+      background-color: deepskyblue;
+      color: white;
+      text-align: center;
+      align-content: center;
+      display: grid;
+}
+.one {
+    grid-column: 1/4;
+    grid-row: 6;
+}
+.two {
+    grid-column: 1/3;
+}
+.five {
+    grid-column: 2/span 2;
+    grid-row: 3/span 3;
+}
+.eight {
+    grid-column: 1/4;
+    grid-row: 1;
+}

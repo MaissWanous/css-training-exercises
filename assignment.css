@@ -1,0 +1,39 @@
+div {
+    width: 600px;
+    height: 34px;
+    text-align: center;
+   background-color: #eee;
+   position: absolute;
+   top: 7px;
+   left: 7px;
+}
+div::first-letter {
+    color: red;
+}
+.parent {
+    width: 614px;
+    height: 49px;
+    background-image:linear-gradient(to right , red 20%,blue 20%,
+    blue 40%,green 40%,green 60%,
+    pink 60%,pink 80%,violet 80%);
+}
+input {
+    display: block;
+    width: 600px;
+    height: 34px;
+    background-color: #eee;
+    border: none;
+    margin-bottom: 15px;
+    caret-color: red;
+}
+input::before {
+    content: "hi";
+    height: 5px;
+    width: 600px;
+    position: relative;
+    top: 34px; 
+    background-image: linear-gradient(to right,red 50% ,rgb(0, 128, 96) 50%);
+}
+input:active {
+    border: none;
+}

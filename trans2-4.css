@@ -1,0 +1,22 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(89, 110, 122);
+    margin: 250px auto;
+    border-bottom: solid 7px black ;
+    position: relative;
+
+}
+div::before {
+    content: "";
+    position: absolute;
+    top: -35%;
+    left: 29px;
+    width: 140px;
+    height: 140px;
+    background-color: black;
+    border-bottom: solid 4px white;
+    border-right: solid 4px white;
+    transform: rotate(45deg);
+
+}

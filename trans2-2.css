@@ -1,0 +1,52 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 224, 224);
+    border-radius: 50% 50%;
+    position: relative;
+  
+}
+.back {
+    position: absolute;
+    margin: auto;
+    background-image: linear-gradient(to right,#fffefe,#fffefe 15%,rgb(177, 47, 134) 15%) ;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    z-index: -1;
+    transition-duration: 1.5s;
+}
+.back2 {
+    position: absolute;
+    margin: auto;
+    background-image: linear-gradient(to left,#fffefe,#fffefe 15%,rgb(75, 47, 177) 15%) ;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    z-index: -2;
+    transition-duration: 1.5s;
+    transition-delay: 0.5s;
+}
+
+div:hover .back {
+    background-image: linear-gradient(to right,#fffefe,#fffefe 15%,rgb(177, 47, 134) 15%) ;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(180deg);
+    
+}
+div:hover .back2 {
+    background-image: linear-gradient(to left,#fffefe,#fffefe 15%,rgb(75, 47, 177) 15%) ;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    z-index: -2;
+    transform: rotate(180deg);
+   
+}

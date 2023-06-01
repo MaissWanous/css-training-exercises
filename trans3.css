@@ -1,0 +1,33 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: 250px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: ghostwhite;
+}
+.parent {
+    perspective: 500px;
+}
+.box {
+    transform-style: preserve-3d;
+    transition-duration:2s;
+    position: relative;
+    transition: transform 2s;
+}
+.front {
+    background-color: rgb(211, 114, 133);
+      backface-visibility: hidden;   
+    position: absolute;
+}
+.back {
+    background-color: darksalmon;
+    position: absolute;
+    transform:rotatex(180deg);
+    z-index: -1;
+}
+.box:hover {
+    transform: rotatex(180deg);
+}
